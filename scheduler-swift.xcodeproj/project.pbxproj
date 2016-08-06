@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		4FDCB1321D5517C00003E73C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDCB1311D5517C00003E73C /* AppDelegate.swift */; };
-		4FDCB1341D5517C00003E73C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDCB1331D5517C00003E73C /* ViewController.swift */; };
+		4FDCB1341D5517C00003E73C /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDCB1331D5517C00003E73C /* LoginVC.swift */; };
 		4FDCB1371D5517C00003E73C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FDCB1351D5517C00003E73C /* Main.storyboard */; };
 		4FDCB1391D5517C00003E73C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FDCB1381D5517C00003E73C /* Assets.xcassets */; };
 		4FDCB13C1D5517C00003E73C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FDCB13A1D5517C00003E73C /* LaunchScreen.storyboard */; };
+		4FDCB1461D551D530003E73C /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDCB1451D551D530003E73C /* DataService.swift */; };
+		4FDCB1481D551E4C0003E73C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDCB1471D551E4C0003E73C /* Constants.swift */; };
+		4FDCB14A1D5560850003E73C /* ProjectsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDCB1491D5560850003E73C /* ProjectsVC.swift */; };
+		D3198575DBEC7433AB45D365 /* Pods_scheduler_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C74E134D4E9EDDFD48AF4613 /* Pods_scheduler_swift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		231A544F87593928A115E398 /* Pods-scheduler-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scheduler-swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-scheduler-swift/Pods-scheduler-swift.debug.xcconfig"; sourceTree = "<group>"; };
 		4FDCB12E1D5517C00003E73C /* scheduler-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "scheduler-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FDCB1311D5517C00003E73C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4FDCB1331D5517C00003E73C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4FDCB1331D5517C00003E73C /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		4FDCB1361D5517C00003E73C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4FDCB1381D5517C00003E73C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FDCB13B1D5517C00003E73C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4FDCB13D1D5517C00003E73C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FDCB1451D551D530003E73C /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		4FDCB1471D551E4C0003E73C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4FDCB1491D5560850003E73C /* ProjectsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsVC.swift; sourceTree = "<group>"; };
+		5FE800A3A5E82B7030272E2C /* Pods-scheduler-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scheduler-swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-scheduler-swift/Pods-scheduler-swift.release.xcconfig"; sourceTree = "<group>"; };
+		C74E134D4E9EDDFD48AF4613 /* Pods_scheduler_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_scheduler_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3198575DBEC7433AB45D365 /* Pods_scheduler_swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		388DEEAA959F05D7F4AB7E22 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				231A544F87593928A115E398 /* Pods-scheduler-swift.debug.xcconfig */,
+				5FE800A3A5E82B7030272E2C /* Pods-scheduler-swift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4FDCB1251D5517C00003E73C = {
 			isa = PBXGroup;
 			children = (
 				4FDCB1301D5517C00003E73C /* scheduler-swift */,
 				4FDCB12F1D5517C00003E73C /* Products */,
+				388DEEAA959F05D7F4AB7E22 /* Pods */,
+				5B74CB52D5AB614F47D29B45 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +76,41 @@
 		4FDCB1301D5517C00003E73C /* scheduler-swift */ = {
 			isa = PBXGroup;
 			children = (
+				4FDCB1441D551D2B0003E73C /* Utils */,
+				4FDCB1431D551BB70003E73C /* Controller */,
 				4FDCB1311D5517C00003E73C /* AppDelegate.swift */,
-				4FDCB1331D5517C00003E73C /* ViewController.swift */,
 				4FDCB1351D5517C00003E73C /* Main.storyboard */,
 				4FDCB1381D5517C00003E73C /* Assets.xcassets */,
 				4FDCB13A1D5517C00003E73C /* LaunchScreen.storyboard */,
 				4FDCB13D1D5517C00003E73C /* Info.plist */,
 			);
 			path = "scheduler-swift";
+			sourceTree = "<group>";
+		};
+		4FDCB1431D551BB70003E73C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4FDCB1331D5517C00003E73C /* LoginVC.swift */,
+				4FDCB1491D5560850003E73C /* ProjectsVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4FDCB1441D551D2B0003E73C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4FDCB1451D551D530003E73C /* DataService.swift */,
+				4FDCB1471D551E4C0003E73C /* Constants.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		5B74CB52D5AB614F47D29B45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C74E134D4E9EDDFD48AF4613 /* Pods_scheduler_swift.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +120,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4FDCB1401D5517C00003E73C /* Build configuration list for PBXNativeTarget "scheduler-swift" */;
 			buildPhases = (
+				BE9A110920FA4A22BE6C9D3F /* [CP] Check Pods Manifest.lock */,
 				4FDCB12A1D5517C00003E73C /* Sources */,
 				4FDCB12B1D5517C00003E73C /* Frameworks */,
 				4FDCB12C1D5517C00003E73C /* Resources */,
+				D1A19A505A478E182A14342A /* [CP] Embed Pods Frameworks */,
+				0F938BC2E9DCE96465236BBE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,13 +182,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0F938BC2E9DCE96465236BBE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-scheduler-swift/Pods-scheduler-swift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE9A110920FA4A22BE6C9D3F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D1A19A505A478E182A14342A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-scheduler-swift/Pods-scheduler-swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4FDCB12A1D5517C00003E73C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FDCB1341D5517C00003E73C /* ViewController.swift in Sources */,
+				4FDCB1461D551D530003E73C /* DataService.swift in Sources */,
+				4FDCB1341D5517C00003E73C /* LoginVC.swift in Sources */,
 				4FDCB1321D5517C00003E73C /* AppDelegate.swift in Sources */,
+				4FDCB14A1D5560850003E73C /* ProjectsVC.swift in Sources */,
+				4FDCB1481D551E4C0003E73C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +352,7 @@
 		};
 		4FDCB1411D5517C00003E73C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 231A544F87593928A115E398 /* Pods-scheduler-swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "scheduler-swift/Info.plist";
@@ -260,6 +364,7 @@
 		};
 		4FDCB1421D5517C00003E73C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FE800A3A5E82B7030272E2C /* Pods-scheduler-swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "scheduler-swift/Info.plist";
@@ -288,6 +393,7 @@
 				4FDCB1421D5517C00003E73C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

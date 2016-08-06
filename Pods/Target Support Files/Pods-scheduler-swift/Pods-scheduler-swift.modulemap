@@ -1,0 +1,6 @@
+framework module Pods_scheduler_swift {
+  umbrella header "Pods-scheduler-swift-umbrella.h"
+
+  export *
+  module * { export * }
+}
